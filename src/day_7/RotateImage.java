@@ -1,6 +1,5 @@
 package src.day_7;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class RotateImage {
@@ -35,6 +34,7 @@ public class RotateImage {
         }
 
         new RotateImage().rotate(matrix);
+        new RotateImage_2().rotateMatrix(matrix.length, matrix.length, matrix);
         System.out.println("========== Result ============");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
