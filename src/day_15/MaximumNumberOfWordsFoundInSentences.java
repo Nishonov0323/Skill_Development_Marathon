@@ -5,10 +5,10 @@ public class MaximumNumberOfWordsFoundInSentences {
         int count = 0;
         int max = 0;
 
-        for (int i = 0; i < sentences.length; i ++) {
-            for (int j = 0; j < sentences[i].length(); j ++) {
-                if (sentences[i].charAt(j) == ' ') {
-                    count ++;
+        for (String sentence : sentences) {
+            for (int j = 0; j < sentence.length(); j++) {
+                if (sentence.charAt(j) == ' ') {
+                    count++;
                 }
             }
             max = Math.max(max, count);
